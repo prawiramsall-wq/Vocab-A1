@@ -178,77 +178,92 @@ const questions = [
 
 {
 question:"The researcher carefully _____ the data before writing the final report.",
-answer:"analyzed"
+answer:"analyzed",
+phonetic:"/ˈænəlaɪzd/"
 },
 
 {
 question:"Students should _____ their opinions with evidence from reliable sources.",
-answer:"support"
+answer:"support",
+phonetic:"/səˈpɔːrt/"
 },
 
 {
 question:"The school decided to _____ a new learning program next semester.",
-answer:"implement"
+answer:"implement",
+phonetic:"/ˈɪmplɪment/"
 },
 
 {
 question:"The results showed a _____ improvement in student performance.",
-answer:"significant"
+answer:"significant",
+phonetic:"/sɪɡˈnɪfɪkənt/"
 },
 
 {
 question:"Scientists continue to _____ new solutions to environmental problems.",
-answer:"develop"
+answer:"develop",
+phonetic:"/dɪˈveləp/"
 },
 
 {
 question:"The professor asked the class to _____ the main causes of climate change.",
-answer:"evaluate"
+answer:"evaluate",
+phonetic:"/ɪˈvæljueɪt/"
 },
 
 {
 question:"The study aims to _____ the effects of social media on teenagers.",
-answer:"examine"
+answer:"examine",
+phonetic:"/ɪɡˈzæmɪn/"
 },
 
 {
 question:"Researchers must _____ accurate records throughout the experiment.",
-answer:"maintain"
+answer:"maintain",
+phonetic:"/meɪnˈteɪn/"
 },
 
 {
 question:"The government plans to _____ access to education in rural areas.",
-answer:"expand"
+answer:"expand",
+phonetic:"/ɪkˈspænd/"
 },
 
 {
 question:"Critical thinking helps students _____ complex problems effectively.",
-answer:"solve"
+answer:"solve",
+phonetic:"/sɒlv/"
 },
 
 {
 question:"The findings may _____ future educational policies.",
-answer:"influence"
+answer:"influence",
+phonetic:"/ˈɪnfluəns/"
 },
 
 {
 question:"Students need to _____ information from different sources before drawing conclusions.",
-answer:"gather"
+answer:"gather",
+phonetic:"/ˈɡæðər/"
 },
 
 {
 question:"Technology has greatly _____ communication around the world.",
-answer:"enhanced"
+answer:"enhanced",
+phonetic:"/ɪnˈhɑːnst/"
 },
 
 {
 question:"The speaker used several examples to _____ his argument.",
-answer:"demonstrate"
+answer:"demonstrate",
+phonetic:"/ˈdemənstreɪt/"
 },
 
 {
 question:"The company developed an effective _____ to increase productivity.",
-answer:"strategy"
+answer:"strategy",
+phonetic:"/ˈstrætədʒi/"
 }
 
 ];
@@ -304,7 +319,7 @@ if(userAnswer === q.answer.toLowerCase()){
 score++;
 
 answerBox.innerHTML =
-`✓ Correct! Answer: ${q.answer}`;
+`✓ Correct! Answer: ${q.answer} <br><small>${q.phonetic}</small>`;
 
 answerBox.className =
 "answer correct";
@@ -312,7 +327,7 @@ answerBox.className =
 }else{
 
 answerBox.innerHTML =
-`✗ Correct Answer: ${q.answer}`;
+`✗ Correct Answer: ${q.answer} <br><small>${q.phonetic}</small>`;
 
 answerBox.className =
 "answer wrong";
